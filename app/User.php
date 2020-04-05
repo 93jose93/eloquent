@@ -36,4 +36,26 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    
+    //relacion de tablas
+    public function posts()
+    {
+       return $this->hasMany(Post::class);
+    }
+
+
+    //getAttribute altera name para que salga diferente/
+    //un nuevo campo logico se crea aqui y se agrega donde se llama
+    public function getGetNameAttribute()
+    {
+       return strtoupper($this->name);
+    }
+
+   //modifica como se guardan los datos en base de datos
+    public function setNameAttribute($value)
+    {
+       $this->attributes['name'] = strtolower($value);
+    }
+
+
 }
