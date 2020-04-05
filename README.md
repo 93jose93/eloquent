@@ -24,3 +24,6 @@ serialización
     $user = $users->find(1);
     //dd($user);
     dd($user->toJson());
+    
+    
+## Formato de valores en tablas y presentación de datos
