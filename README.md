@@ -2,3 +2,5 @@
 
 ## Relaciones de tablas
 
+## Colecciones y serialización de datos
+
