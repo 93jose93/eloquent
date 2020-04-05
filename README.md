@@ -18,3 +18,9 @@ Colecciones
 
     dd($users->load('posts'));
 
+serialización
+
+    //dd($users->toArray());
+    $user = $users->find(1);
+    //dd($user);
+    dd($user->toJson());
