@@ -27,3 +27,12 @@ serialización
     
     
 ## Formato de valores en tablas y presentación de datos
+
+php artisan make:model Post -m –f 
+
+ para crear el modelo con la migración que es –m y el Factory que es –f donde se crea en factories el factori Post donde se crean oraciones aleatorias, donde creara datos falsos en la base de datos
+
+php artisan migrate:refresh --seed 
+
+se usa este comando para actualizar los campos que se han creado en la base de datos, y --seed es para agregar los datos de semilla los datos falsos que se asigna como ejemplo.
+
