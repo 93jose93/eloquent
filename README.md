@@ -4,3 +4,17 @@
 
 ## Colecciones y serialización de datos
 
+Colecciones
+
+    //dd($users);
+
+    //dd($users->contains(4));
+
+    //dd($users->except([1, 2, 3]));
+
+    //dd($users->only(4));
+
+    //dd($users->find(4));
+
+    dd($users->load('posts'));
+
